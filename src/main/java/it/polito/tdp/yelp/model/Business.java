@@ -21,6 +21,8 @@ public class Business {
 	private String state ;
 	private Double stars ;
 	
+	// per passare da business a review
+	// mappare una relazione 1 a molti
 	private Set<Review> reviews ;  // oppure List<>
 	
 
@@ -152,6 +154,8 @@ public class Business {
 	public int hashCode() {
 		return Objects.hash(businessId);
 	}
+	
+	// equals e hashCode solo per chiave primaria
 
 	@Override
 	public boolean equals(Object obj) {
