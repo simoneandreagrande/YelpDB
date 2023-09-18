@@ -17,6 +17,7 @@ public class TestDAO {
 		
 		List<Double> stelle = new ArrayList<>() ;
 		long startTime = System.nanoTime() ;
+		// per un certo b specifico, chiedo al DAO il numero medio di a
 		for(Business b: businesses) {
 			Double num = dao.averageStars(b) ;
 			stelle.add(num) ;

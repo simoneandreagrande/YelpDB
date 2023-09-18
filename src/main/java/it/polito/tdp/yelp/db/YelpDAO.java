@@ -14,6 +14,8 @@ import it.polito.tdp.yelp.model.Business;
 
 public class YelpDAO {
 
+//	static Map<String, Business> businessIDMap = new HashMap<>();
+
 	public List<Business> readBusinesses(Map<String, Business> businessIdMap) {
 
 		Connection conn;
